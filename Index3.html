@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vamsi NDA Academy</title>
+<style>
+body{font-family:Arial;margin:0;background:#f2f5f9}
+header{background:#0a3d62;color:white;padding:20px;text-align:center}
+nav{background:#082c46;padding:10px;text-align:center}
+nav a{color:white;margin:10px;text-decoration:none;font-weight:bold}
+section{background:white;margin:20px;padding:20px;border-radius:10px;box-shadow:0 2px 6px rgba(0,0,0,0.1)}
+h2{color:#0a3d62}
+footer{background:#0a3d62;color:white;text-align:center;padding:10px}
+button{padding:8px 12px;background:#1e90ff;color:white;border:none;border-radius:5px;cursor:pointer}
+#chatbox{border:1px solid #ccc;padding:10px;height:200px;overflow:auto;background:#fafafa}
+</style>
+</head>
+<body>
+
+<header>
+<h1>Vamsi NDA Academy</h1>
+<p>Your Complete Guide to NDA Success</p>
+</header>
+
+<nav>
+<a href="#home">Home</a>
+<a href="#eligibility">Eligibility</a>
+<a href="#syllabus">Syllabus</a>
+<a href="#physical">Physical</a>
+<a href="#medical">Medical</a>
+<a href="#ssb">SSB</a>
+<a href="#timetable">Timetable</a>
+<a href="#pyqs">PYQs</a>
+<a href="#fitness">Fitness</a>
+<a href="#assistant">NDA AI</a>
+</nav>
+
+<section id="home">
+<h2>Home</h2>
+<p>NDA (National Defence Academy) exam is conducted by UPSC for joining Indian Army, Navy and Air Force.</p>
+<p>This website provides complete preparation guidance including syllabus, physical standards, SSB interview tips and study plans.</p>
+</section>
+
+<section id="eligibility">
+<h2>Eligibility & Qualification</h2>
+<ul>
+<li>Age: 16.5 to 19.5 years</li>
+<li>Education: 12th Pass</li>
+<li>For Air Force & Navy: Physics and Mathematics compulsory</li>
+<li>Only unmarried male & female candidates eligible</li>
+</ul>
+</section>
+
+<section id="syllabus">
+<h2>NDA Syllabus & Chapter Weightage</h2>
+<h3>Mathematics (300 Marks)</h3>
+<ul>
+<li>Algebra – 20%</li>
+<li>Trigonometry – 15%</li>
+<li>Calculus – 20%</li>
+<li>Vectors & 3D – 10%</li>
+<li>Probability & Statistics – 10%</li>
+</ul>
+<h3>General Ability Test (600 Marks)</h3>
+<ul>
+<li>English – 200 Marks</li>
+<li>Physics – 100 Marks</li>
+<li>Chemistry – 60 Marks</li>
+<li>History – 80 Marks</li>
+<li>Geography – 80 Marks</li>
+<li>Current Affairs – 80 Marks</li>
+</ul>
+</section>
+
+<section id="physical">
+<h2>Physical Test Details</h2>
+<ul>
+<li>Good stamina and endurance</li>
+<li>Running practice recommended</li>
+<li>Pushups, situps, pullups</li>
+<li>Outdoor group tasks during SSB</li>
+</ul>
+</section>
+
+<section id="medical">
+<h2>Medical Test Details</h2>
+<ul>
+<li>Good eyesight</li>
+<li>No major bone deformities</li>
+<li>Normal hearing ability</li>
+<li>Proper height & weight ratio</li>
+</ul>
+</section>
+
+<section id="ssb">
+<h2>SSB Interview Tricks & Communication</h2>
+<ul>
+<li>Be confident and honest</li>
+<li>Improve English communication</li>
+<li>Practice PPDT and TAT stories</li>
+<li>Develop leadership qualities</li>
+<li>Stay calm in group discussion</li>
+</ul>
+<p>Board members check Officer Like Qualities (OLQs) such as responsibility, teamwork and decision making.</p>
+</section>
+
+<section id="timetable">
+<h2>Study Timetable</h2>
+<ul>
+<li>Morning: Mathematics (2 hrs)</li>
+<li>Afternoon: GAT Subjects (2 hrs)</li>
+<li>Evening: Revision (1 hr)</li>
+<li>Night: Current Affairs (30 mins)</li>
+</ul>
+</section>
+
+<section id="pyqs">
+<h2>Previous Year Questions (Practice Topics)</h2>
+<ul>
+<li>Solve last 10 years Mathematics papers</li>
+<li>Practice English grammar questions</li>
+<li>Revise Physics numericals</li>
+</ul>
+</section>
+
+<section id="fitness">
+<h2>Fitness Tips</h2>
+<ul>
+<li>Daily running 1-2 km</li>
+<li>Pushups 20 × 3 sets</li>
+<li>Healthy diet with proteins</li>
+<li>Drink plenty of water</li>
+</ul>
+</section>
+
+<section>
+<h2>Motivation</h2>
+<p>"Discipline is the bridge between goals and success."</p>
+<p>Stay focused. Stay consistent. Future Officer in making!</p>
+</section>
+
+<section id="assistant">
+<h2>NDA AI Assistant</h2>
+<div id="chatbox"></div>
+<input type="text" id="userInput" placeholder="Ask about NDA...">
+<button onclick="reply()">Send</button>
+</section>
+
+<footer>
+<p>Created by Vamsi | Future NDA Officer & Software Engineer</p>
+</footer>
+
+<script>
+function reply(){
+var input=document.getElementById("userInput").value;
+var chat=document.getElementById("chatbox");
+chat.innerHTML+="<p><b>You:</b> "+input+"</p>";
+
+var response="Please study regularly and stay fit for NDA.";
+if(input.toLowerCase().includes("age")) response="Age limit is 16.5 to 19.5 years.";
+if(input.toLowerCase().includes("syllabus")) response="Maths and General Ability Test are main papers.";
+if(input.toLowerCase().includes("ssb")) response="SSB checks Officer Like Qualities.";
+
+chat.innerHTML+="<p><b>AI:</b> "+response+"</p>";
+document.getElementById("userInput").value="";
+}
+</script>
+
+</body>
+</html>
